@@ -14,12 +14,24 @@ ActionMailer::Base.smtp_settings = {
 }
 =end
 
+=begin
 #SendMail Configuration
 ActionMailer::Base.delivery_method = :sendmail
 ActionMailer::Base.sendmail_settings = {
 :location => '/usr/sbin/sendmail',
 :arguments => '-i -t'
 }    
+=end
 
+#SendGrid configuration
+ActionMailer::Base.smtp_settings = {
+  :user_name => "gautamrege",
+  :password => "grege123",
+  :domain => "joshsoftware.com",
+  :address => "smtp.sendgrid.net",
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}
 
 
