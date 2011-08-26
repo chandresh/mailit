@@ -1,6 +1,6 @@
 
 #SMTP configuration
-=begin
+
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
     :tls => true,
@@ -9,10 +9,10 @@ ActionMailer::Base.smtp_settings = {
     :domain => "joshsoftware.com",
     :enable_starttls_auto => true,
     :authentication => :plain,
-    :user_name => "marketing@joshsoftware.com",
-    :password => "m@jspl"
+    :user_name => "ninad@joshsoftware.com",
+    :password => "josh123"
 }
-=end
+
 
 =begin
 #SendMail Configuration
@@ -23,6 +23,7 @@ ActionMailer::Base.sendmail_settings = {
 }    
 =end
 
+=begin
 #SendGrid configuration
 ActionMailer::Base.smtp_settings = {
   :user_name => "gautamrege",
@@ -33,5 +34,5 @@ ActionMailer::Base.smtp_settings = {
   :authentication => :plain,
   :enable_starttls_auto => true
 }
-
+=end
 
