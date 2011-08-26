@@ -1,6 +1,4 @@
 
-#SMTP configuration
-
 #SendGrid configuration
 ActionMailer::Base.smtp_settings = {
   :user_name => "gautamrege",
